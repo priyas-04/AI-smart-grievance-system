@@ -13,16 +13,22 @@ A production-ready, AI-driven grievance management platform that automatically r
 - **Railway** (Backend) - Free hosting
 - **GitHub** (Code repository)
 
+#### 🌟 NEW: Render + Railway + Vercel
+👉 **See [RENDER_DEPLOYMENT.md](./RENDER_DEPLOYMENT.md) for:
+- **Vercel** (Frontend) - Free hosting
+- **Render** (Backend) - Free hosting  
+- **Railway** (MySQL Database) - Free hosting
+
 #### 🚀 One-Click Setup:
 ```bash
-# Run the deployment script
+# Run deployment script
 ./deploy.ps1        # Windows PowerShell
 # or
 ./deploy.sh          # Linux/Mac
 
 # Follow the instructions to deploy to:
 # - Vercel (frontend)
-# - Railway (backend)
+# - Railway (backend) OR Render (backend)
 ```
 
 ### 📋 System Overview
