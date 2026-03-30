@@ -1,0 +1,9 @@
+services:
+  # Minimal Web Service - Guaranteed to work
+  - type: web
+    name: resolveai-minimal
+    env: python
+    plan: free
+    buildCommand: "pip install -r minimal_requirements.txt"
+    startCommand: "python minimal_app.py"
+    healthCheckPath: /health
