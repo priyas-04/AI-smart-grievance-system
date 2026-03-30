@@ -87,13 +87,13 @@ mysql://user:password@containers-us-west-xxx.railway.app:port/railway
 
 ### 2.3 Add Environment Variables in Railway
 ```
-DATABASE_URL=mysql://user:password@host:port/database
-SECRET_KEY=your-super-secret-production-key-change-this-$(date +%s)
+DATABASE_URL=mysql://railway:YOUR_ACTUAL_PASSWORD@containers-us-west-1.railway.app:7802/railway
+SECRET_KEY=your-super-secret-production-key-change-this-1714449600
 ALGORITHM=HS256
 ACCESS_TOKEN_EXPIRE_MINUTES=60
 ```
 
-**Note**: Use the exact connection string Railway provides (starts with `mysql://`)
+**Note**: Copy the exact connection string Railway provides from your MySQL service dashboard
 
 ---
 
@@ -129,13 +129,18 @@ services:
 
 ### 3.3 Add Environment Variables in Render
 ```
-DATABASE_URL=mysql://railway-user:password@containers-us-west-xxx.railway.app:port/railway
-SECRET_KEY=your-super-secret-production-key-change-this-$(date +%s)
+DATABASE_URL=mysql://railway:YOUR_ACTUAL_PASSWORD@containers-us-west-1.railway.app:7802/railway
+SECRET_KEY=your-super-secret-production-key-change-this-1714449600
 ALGORITHM=HS256
 ACCESS_TOKEN_EXPIRE_MINUTES=60
 ```
 
-**Important**: Use the exact Railway MySQL connection string (starts with `mysql://`) - the system will automatically convert it to `mysql+pymysql://` for SQLAlchemy.
+**Important**: 
+1. Copy the **exact connection string** from Railway MySQL service
+2. Replace `YOUR_ACTUAL_PASSWORD` with the real password from Railway
+3. The system will automatically convert `mysql://` to `mysql+pymysql://` for SQLAlchemy
+
+**Example**: If Railway gives you `mysql://railway:abc123@containers-us-west-1.railway.app:7802/railway`, use that exactly.
 
 ### 3.4 Deploy Backend
 - Click **"Create Web Service"**
