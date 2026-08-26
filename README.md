@@ -2,54 +2,6 @@
 
 A production-ready, AI-driven grievance management platform that automatically routes citizen complaints to the correct government department using NLP and machine learning.
 
-## 🚀 Quick Start
-
-### 🌐 Live Demo
-**🎯 Try it now**: [https://resolveai-demo.vercel.app](https://resolveai-demo.vercel.app)
-
-### ⚡ Quick Online Deployment (5 Minutes)
-👉 Deploy to Vercel (frontend) + Railway (backend) with free tiers:
-
-#### 🚀 One-Click Setup:
-```bash
-# Deploy Frontend to Vercel
-# 1. Go to https://vercel.com
-# 2. Connect your GitHub repository
-# 3. Select the 'frontend' folder
-# 4. Add environment variable: VITE_API_URL=https://your-backend-url.railway.app
-# 5. Click 'Deploy'
-
-# Deploy Backend to Railway
-# 1. Go to https://railway.app
-# 2. Connect your GitHub repository
-# 3. Add PostgreSQL service
-# 4. Add environment variables from backend/.env.production.example
-# 5. Click 'Deploy'
-```
-
-## 🔐 Role-Based Access Control (RBAC)
-
-### 👤 Citizen (User)
-- Register/login to the system
-- Submit complaints
-- View only their complaints
-- Track complaint status
-- ❌ Cannot access admin or other users' data
-
-### 🏢 Department Officer
-- View complaints assigned to their department only
-- Update complaint status (pending → in-progress → resolved)
-- Add remarks and updates
-- ❌ Cannot access admin panel or other departments
-
-### 👑 Administrator
-- Full system access and control
-- User management (CRUD operations)
-- Department management (CRUD operations)
-- System configuration and settings
-- View all complaints and analytics
-- System performance monitoring
-
 ## 🏗️ Technology Stack
 
 ### Backend
@@ -134,13 +86,5 @@ cd backend
 railway login
 railway up
 ```
-
-## 📞 Support
-
-For issues, questions, or contributions:
-- Create an issue in the project repository
-- Check the API documentation at `/docs` endpoint
-
----
 
 **🚀 Production-ready AI Smart Grievance System!**
